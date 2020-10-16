@@ -1,18 +1,15 @@
-//#include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
 #include "ImageManager.h"
 
 // Image Manager Default Constructor
 ImageManager::ImageManager()
-	//: m_imagePath("data/real/Image_1.png")
 {
 	m_imagePath = cv::samples::findFile("data/grey/threshold.png");
 }
 
 // Image Manager Constructor
 ImageManager::ImageManager(std::string imagePath)
-	//: m_imagePath(imagePath)
 {
 	m_imagePath = cv::samples::findFile(imagePath);
 }

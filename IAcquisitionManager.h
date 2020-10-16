@@ -36,10 +36,4 @@ public:
 	 * \param[out] A cv::Mat with the next image to be processed.
 	 */
 	virtual void getLastImage(cv::Mat& image) =0;
-	
-//protected:
-//	int m_width;  /*!< Image width (x-axis). */
-//	int m_height; /*!< Image height (y-axis). */
-//	int m_type;   /*!< Type of the matrix element, like CV_16SC3 for 16-bit signed 3-channel array and so on.. */
-//	
 };
