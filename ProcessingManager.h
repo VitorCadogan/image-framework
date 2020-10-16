@@ -17,13 +17,9 @@
 #pragma once
 
 #include "iostream"
-//#include "functional"
 
 #include "Segmentation.h"
 #include "ImageManager.h"
-
-//class IAcquisitionManager;
-//class Segmentation;
 
 class ProcessingManager
 {

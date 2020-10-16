@@ -1,5 +1,4 @@
 #include "ProcessingManager.h"
-#include "ImageManager.h"
 #include "ImageListManager.h"
 
 #include "opencv2/core/core.hpp"
@@ -69,7 +68,7 @@ void ProcessingManager::updateOutput()
 
 		if (k == 's')
 		{
-			cv::imwrite("segmented_field.png", m_image);
+			cv::imwrite("segmented_img.png", m_image);
 		}
 	}
 }
