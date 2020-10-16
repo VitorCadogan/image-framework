@@ -18,8 +18,8 @@
 
 #include "iostream"
 
-#include "Segmentation.h"
-#include "ImageManager.h"
+#include "Segmentation/Segmentation.h"
+#include "Acquisition/ImageManager.h"
 
 class ProcessingManager
 {

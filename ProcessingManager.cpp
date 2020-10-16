@@ -1,5 +1,5 @@
 #include "ProcessingManager.h"
-#include "ImageListManager.h"
+#include "Acquisition/ImageListManager.h"
 
 #include "opencv2/core/core.hpp"
 
