@@ -21,10 +21,20 @@
 class ImageManager : public IAcquisitionManager
 {
 public:
+	/*! \brief Class default constructor.
+	*/
 	ImageManager();
 
-	ImageManager(std::string imagePath);
+	/*! \brief Class constructor.
+	*
+	*   \param[in] The path of the required image.
+	*/
+	ImageManager(cv::String imagePath);
 
+	/*! \brief Read image using parsed matrix in the parameter.
+	*
+	*   \param[out] The path of the required image.
+	*/
 	void getLastImage(cv::Mat& image) override;
 
 private:

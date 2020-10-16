@@ -21,10 +21,23 @@
 class ImageListManager : public IAcquisitionManager
 {
 public:
+	/*! \brief Class default constructor.
+	*/
 	ImageListManager();
 
+	/*! \brief Class constructor.
+	* 
+	*   \param[in] The path where the required images are.
+	*/
 	ImageListManager(cv::String imagesFolder);
 
+	/*! \brief Read the current image using the parsed matrix in the parameter.
+	* 
+	*   Although the class intends to read a list of image, it reads one by one.
+	*   A counter is incremented after each call of this function to keep a track of the already read images.
+	*
+	*   \param[out] A cv::Mat with the next image to be processed.
+	*/
 	void getLastImage(cv::Mat& image) override;
 
 private:

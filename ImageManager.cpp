@@ -9,7 +9,7 @@ ImageManager::ImageManager()
 }
 
 // Image Manager Constructor
-ImageManager::ImageManager(std::string imagePath)
+ImageManager::ImageManager(cv::String imagePath)
 {
 	m_imagePath = cv::samples::findFile(imagePath);
 }
