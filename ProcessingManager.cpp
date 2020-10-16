@@ -6,7 +6,7 @@
 ProcessingManager::ProcessingManager() :
 	m_imageManagerPtr( std::make_unique<ImageManager>() ),
 	m_segmentationPtr( std::make_unique<Segmentation>() ),
-	m_image( cv::Mat::zeros(1, 1, CV_8UC3) ),
+	m_image( cv::Mat::zeros(1, 1, CV_8UC3) ), // TODO: Verify this type is the best dafault option for every kinf of images
 	m_isImageValid( false )
 {
 	m_imageManagerPtr = std::make_unique<ImageListManager>("data/game");
