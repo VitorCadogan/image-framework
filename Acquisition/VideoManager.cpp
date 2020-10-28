@@ -25,4 +25,21 @@ VideoManager::VideoManager(int cameraNumber)
 
 void VideoManager::getLastImage(cv::Mat& image)
 {
+	// Check if Capture object is properly initialized.
+	if (!m_captureObj.isOpened())
+	{
+		std::cout << "Error opening video file" << std::endl;
+		return;
+	}
+
+	// Capture frame
+	m_captureObj >> m_frame;
+
+	if (m_frame.empty())
+	{
+		std::cout << "Error while reading image! Image matrix is empty !" << std::endl;
+		return;
+	}
+
+	image = m_frame;
 }
