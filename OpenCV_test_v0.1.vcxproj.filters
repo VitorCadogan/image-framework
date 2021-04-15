@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Acquisition">
+      <UniqueIdentifier>{ffcbfca8-ff5c-4a28-a94e-93ad92653311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Segmentation">
+      <UniqueIdentifier>{6203a7e8-d312-40ab-b677-e948178f7252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Acquisition">
+      <UniqueIdentifier>{14a8ffc5-fee4-44f2-b704-0fce5433fbf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Segmentation">
+      <UniqueIdentifier>{0235f6f7-a859-4081-a00c-ee1b87c445b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ProcessingManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Acquisition\ImageListManager.cpp">
+      <Filter>Source Files\Acquisition</Filter>
+    </ClCompile>
+    <ClCompile Include="Acquisition\ImageManager.cpp">
+      <Filter>Source Files\Acquisition</Filter>
+    </ClCompile>
+    <ClCompile Include="Segmentation\Segmentation.cpp">
+      <Filter>Source Files\Segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="Acquisition\VideoManager.cpp">
+      <Filter>Source Files\Acquisition</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ProcessingManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Acquisition\IAcquisitionManager.h">
+      <Filter>Header Files\Acquisition</Filter>
+    </ClInclude>
+    <ClInclude Include="Acquisition\ImageListManager.h">
+      <Filter>Header Files\Acquisition</Filter>
+    </ClInclude>
+    <ClInclude Include="Acquisition\ImageManager.h">
+      <Filter>Header Files\Acquisition</Filter>
+    </ClInclude>
+    <ClInclude Include="Segmentation\Segmentation.h">
+      <Filter>Header Files\Segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="Acquisition\VideoManager.h">
+      <Filter>Header Files\Acquisition</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

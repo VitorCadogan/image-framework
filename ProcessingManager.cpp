@@ -1,5 +1,6 @@
 #include "ProcessingManager.h"
 #include "Acquisition/ImageListManager.h"
+#include "Acquisition/VideoManager.h"
 
 #include "opencv2/core/core.hpp"
 
@@ -9,7 +10,7 @@ ProcessingManager::ProcessingManager() :
 	m_image( cv::Mat::zeros(1, 1, CV_8UC3) ), // TODO: Verify this type is the best dafault option for every kinf of images
 	m_isImageValid( false )
 {
-	m_imageManagerPtr = std::make_unique<ImageListManager>("data/game");
+	m_imageManagerPtr = std::make_unique<VideoManager>("data/video/1CM1_1_R_#217.avi");
 }
 
 void ProcessingManager::initialize()
@@ -64,7 +65,7 @@ void ProcessingManager::updateOutput()
 	if (m_isImageValid)
 	{
 		cv::imshow("Display window", m_image);
-		int k = cv::waitKey(0); // Wait for a keystroke in the window
+		int k = cv::waitKey(1); // Wait for a keystroke in the window
 
 		if (k == 's')
 		{
